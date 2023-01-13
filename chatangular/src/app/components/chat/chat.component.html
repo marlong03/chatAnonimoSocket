@@ -1,0 +1,26 @@
+
+<section class="chat">
+    <div class="chat__header d-flex justify-content-between align-items-center px-4 py-4">
+        <div>
+            <h3>{{sala.codigosala}}</h3>
+        </div>
+        <div>
+            <input type="button" value="Salir" class="btn btn-outline-light px-4" (click)="direccionarUrl('')">
+        </div>
+
+    </div>
+    <div class="chat__box" id ="chat" #chat>
+        <div class="msg__box  p-3 d-flex justify-content-start m-3" *ngFor="let m of listaMensajes">
+            <p>{{m.datamensaje}}</p>
+        </div>
+        <input type="text" autofocus class="input__autofocus">
+    </div>
+    <div class="chat__footer">
+        <div class="chat__container--input_message d-flex justify-content-center py-3 px-2  ">
+            <input type="text" class="box-message" placeholder="Mensaje" [(ngModel)]="mensajeEnviar" (keydown)="enviarConEnter($event)">
+           <button type="button"class="btn__enviar d-flex justify-content-center align-items-center p-2 text-light rounded-circle"  (click)="enviarMensaje()" >
+            <img src="../../../assets/imgs/enviar.png"  alt="boton para enviar">
+            </button>
+        </div>
+    </div>
+</section>

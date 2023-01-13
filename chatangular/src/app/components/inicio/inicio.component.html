@@ -1,0 +1,28 @@
+<section class="inicio">
+    <div class="d-flex justify-content-center p-3">
+        <h1 class="h1 mt-3">Chat Anonimus</h1>
+    </div>
+    <div class="d-flex justify-content-center p-3 mt-3 text-center">
+        <h3></h3>
+    </div>
+    <div class="d-flex justify-content-center">
+        <input type="text" class="inputCode" placeholder="Codigo sala"name="salaIntroducida" [(ngModel)]="salaIntroducida"  >
+       
+    </div>
+    <div class="d-flex justify-content-center my-4 container__btns">
+        <input type="button" class="btn btn-primary px-5 py-2 " value="Unirme" (click)="entrarAUnaSala()">
+        <input type="button" class="btn btn-outline-light px-4 py-2 mx-2" value="Crear sala" (click)="crearSala()">
+    </div>
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+</section>
